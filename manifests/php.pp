@@ -9,7 +9,6 @@ $phpPackages = [
 	"php5-curl", 
 	"php5-gd", 
 	"php5-intl", 
-	"php-pear", 
 	"php5-imagick", 
 	"php5-imap", 
 	"php5-mcrypt", 
@@ -34,7 +33,18 @@ package {
 #  PEAR/PECL Packages  #
 ########################
 
+# Composer
 class {
 	"composer":
 		require => Package["curl"]
+}
+
+
+# PHPUnit
+include php
+include php::params
+include php::pear
+
+class { 'php::phpunit':
+  ensure => latest
 }
