@@ -2,6 +2,7 @@
 cd /tmp;
 #wget http://ffmpeg.gusari.org/static/64bit/ffmpeg.static.64bit.latest.tar.gz -O ffmpeg.tar.gz;
 wget http://ffmpeg.gusari.org/static/32bit/ffmpeg.static.32bit.latest.tar.gz -O ffmpeg.tar.gz;
+tar -xzvf ffmpeg.tar.gz;
 sudo mv ffmpeg /usr/bin
 sudo mv ffprobe /usr/bin
 sudo apt-get --purge autoremove puppet puppet-common puppetmaster puppetmaster-common -y;
