@@ -3,6 +3,7 @@ import "tools.pp"
 import "lamp.pp"
 import "apache.pp"
 import "php.pp"
+import "solr.pp"
 
 group { "puppet":
   ensure => "present",
