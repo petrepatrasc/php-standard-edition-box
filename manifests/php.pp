@@ -20,7 +20,8 @@ $phpPackages = [
 	"php5-sqlite",
 	"php5-tidy",
 	"php5-xmlrpc",
-	"php5-xsl" 
+	"php5-xsl",
+	"php5-xdebug",
 ]
 
 package {
